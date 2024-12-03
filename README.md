@@ -26,6 +26,7 @@ Tornare Magali
 
 - Création du champ de brique
 - Création des niveaux
+- Essayer de comprendre un truc en python...
 
 ## Gestion Bonus
 
@@ -33,3 +34,4 @@ Chaignat Bastien
 
 - Création des bonus
 - Intégration dans les briques
+
