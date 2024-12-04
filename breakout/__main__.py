@@ -5,7 +5,7 @@
 # descrption: This file is ran by calling "python -m breakout". It runs the game
 
 import pygame
-from . import Breakout
+from breakout import *
 import sys
 
 # Initialize pygame

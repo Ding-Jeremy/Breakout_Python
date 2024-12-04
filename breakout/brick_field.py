@@ -1,9 +1,5 @@
-#
-#
-#
-
-import numpy as np
 import pygame
+import numpy as np
 import random
 
 
@@ -25,7 +21,6 @@ class Brick:
         rect_position = (self.position, self.size)
         # Draws a rectangle to the screen
         pygame.draw.rect(self.screen, self.color, rect_position)
-        pass
 
 
 class Brick_field:
@@ -47,38 +42,5 @@ class Brick_field:
 
     def show(self):
         for b in self.bricks:
-            b.show()
-        pass
-
-
-class Ball:
-    def __init__(self, screen):
-        pass
-
-    def show(self):
-        pass
-
-
-class Breakout:
-    """Defines the breakout game."""
-
-    def __init__(self, screen):
-        # Define screen object
-        self.screen = screen
-        # Define the field of bricks
-        self.brick_field = Brick_field(screen)
-
-        # Define the balls array
-        self.balls = []
-
-        # Create one ball
-        self.balls.append(Ball(screen))
-        pass
-
-    def show(self):
-        """Displays game on the screen"""
-        # Show bricks
-        self.brick_field.show()
-        for b in self.balls:
             b.show()
         pass
