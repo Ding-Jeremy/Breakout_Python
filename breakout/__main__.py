@@ -5,12 +5,14 @@
 # descrption: This file is ran by calling "python -m breakout". It runs the game
 
 import pygame
-from breakout import *
 import sys
+
+from breakout import Breakout
 
 # Initialize pygame
 pygame.init()
-
+# Initialize font
+font = pygame.font.Font(pygame.font.get_default_font(), 36)
 # Set up the screen dimensions and create a window
 screen_width, screen_height = 800, 600
 screen = pygame.display.set_mode((screen_width, screen_height))
@@ -23,17 +25,16 @@ clock = pygame.time.Clock()
 running = True
 
 # Create a Breakout object
-breakout = Breakout(screen)
+breakout = Breakout(screen, font)
+
 
 # Test d'ajout
-
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-
     # Draws background
-    screen.fill("white")
+    screen.fill("black")
     # Draws game
     breakout.show()
 
