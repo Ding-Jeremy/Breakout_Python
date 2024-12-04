@@ -25,6 +25,7 @@ running = True
 # Create a Breakout object
 breakout = Breakout(screen)
 
+# Test d'ajout
 
 while running:
     for event in pygame.event.get():
