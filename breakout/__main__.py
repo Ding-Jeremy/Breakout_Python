@@ -11,6 +11,7 @@ from breakout import Breakout
 
 # Initialize pygame
 pygame.init()
+
 # Initialize font
 font = pygame.font.Font(pygame.font.get_default_font(), 36)
 # Set up the screen dimensions and create a window
